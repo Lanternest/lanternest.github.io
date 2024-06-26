@@ -1,0 +1,408 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(81,104,126);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    background-image: linear-gradient(rgb(51,51,51,1) 17.8%, rgb(81,104,126) 100.2%);
+    color: #fff;
+    padding: 20px 0;
+    justify-content: center;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+header a{
+    display: flex;
+    color: #fff;
+}
+
+footer {
+    background-image: linear-gradient(rgb(81,104,126) 17.8%,rgb(51, 51, 51) 100.2%);
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+nav {
+    background-color: rgba(49,49,48,0.4);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav a {
+    margin: 0 10px;
+}
+
+button {
+    background: #353935;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    border-radius: 1rem;
+    transition: 0.1s;
+}
+
+button:hover {
+    scale: 1.2;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+}
+
+/* Botones Ford, Chevrolet, Dodge, Contact */
+button.ford::after, button.chevrolet::after, button.dodge::after, button.contact::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    filter: blur(9px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+button.ford::after {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(33,56,182,1) 17.8%, rgba(33,105,255,1) 100.2%);
+}
+
+button.chevrolet::after {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255,205,86,1) 17.8%, rgba(250,151,52,1) 100.2%);
+}
+
+button.dodge::after {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(207,204,197,1) 17.8%, rgba(107,104,101,1) 100.2%);
+}
+
+button.contact::after {
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(48,47,47,1) 17.8%, rgba(107,104,101,1) 100.2%);
+}
+
+button:active {
+    transform: scale(0.9) rotate(3deg);
+    transition: 0.5s;
+}
+
+/* Tarjetas */
+.card-container, .card-product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card, .card-product {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(33.333% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.459);
+    transition: transform 0.2s;
+}
+
+.card{
+    background-image: radial-gradient(rgb(138, 127, 116) 17.8%, rgb(68, 68, 68) 100.2%);
+}
+
+.card-img-top, .image-box img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-text {
+    text-align: center;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-style: normal;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-product {
+    aspect-ratio: 1 / 0.7;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-box {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+.card-product::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 2px solid snow;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.card-product:hover img {
+    filter: grayscale(1) brightness(0.4);
+}
+
+.card-product:hover .content {
+    visibility: visible;
+    transition: 0.4s ease-in-out;
+}
+
+.card-product:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+
+.content {
+    width: 80%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: inherit;
+    visibility: hidden;
+    border-radius: 8px;
+}
+
+.content h2{
+    font-size: 1.5rem;
+}
+
+.content p{
+    font-size: 0.6rem;
+}
+
+/* Formulario */
+.contact_form {
+    width: 80%;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #fbfbfb;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+input, textarea {
+    background-color: #fbfbfb;
+    width: 90%;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #353935;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 7px;
+}
+
+textarea {
+    height: auto;
+    padding-left: 10px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+}
+
+button#enviar {
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+}
+
+span {
+    color: #c01d1d;
+}
+
+.aviso {
+    font-size: 13px;
+    color: #c01d1d;
+}
+
+legend {
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+/* Footer y Redes */
+footer button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+footer button .fa-x-twitter:hover {
+    color: #fdfdfd;
+}
+
+footer button .fa-facebook:hover {
+    color: rgb(24, 24, 197);
+}
+
+footer button .fa-youtube:hover {
+    color: rgb(180, 17, 17);
+}
+
+footer button .fa-instagram:hover {
+    background: linear-gradient(rgba(253,244,151,1) 25%, rgba(253,89,73,1) 50%, rgba(214,36,159,1) 75%, rgba(40,90,235,1) 100%);
+    border-radius: 5rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    nav a{
+        display: block;
+        margin: 5px 0;
+    }
+
+    .card, .card-product {
+        width: calc(90% - 40px);
+    }
+
+    .content h2 {
+        font-size: 1.9rem;
+    }
+
+    .content p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0;
+    }
+
+    nav button {
+        padding: 5px 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .content h2 {
+        font-size: 1.2rem;
+    }
+
+    .content p {
+        font-size: 0.8rem;
+    }
+
+    footer button {
+        font-size: 1.2rem;
+    }
+
+    .card, .card-product {
+        width: 100%;
+    }
+
+    .contact_form {
+        width: 95%;
+        padding-left: 10px;
+    }
+
+    input, textarea {
+        width: 90%;
+    }
+}
+
+@media (max-width: 360px){ 
+    header {
+        padding: 10px 0;
+    }
+
+    nav button {
+        padding: 5px 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .content h2 {
+        font-size: 0.9rem;
+    }
+
+    .content p {
+        font-size: 0.6rem;
+    }
+
+    footer button {
+        font-size: 1.2rem;
+    }
+
+    .card, .card-product {
+        width: 100%;
+    }
+
+    .contact_form {
+        width: 95%;
+        padding-left: 10px;
+    }
+
+    input, textarea {
+        width: 90%;
+    }
+}

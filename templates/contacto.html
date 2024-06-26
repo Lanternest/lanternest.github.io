@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle Rides</title>
+    <link rel="icon" href="/assets/logo.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header><!-- Contenido del header -->
+        <a title="Muscle Rides" href="/index.html"><img src="/assets/logo.png" alt="Muscle Rides" width="80"></a>
+        <h1>Muscle Rides</h1>
+    </header>
+    <nav><!-- Navegación (links a las diferentes páginas) -->
+        <a href="/templates/producto1.html"><button class="ford">Ford</button></a>
+        <a href="/templates/producto2.html"><button class="chevrolet">Chevrolet</button></a>
+        <a href="/templates/producto3.html"><button class="dodge">Dodge</button></a>
+        <a href="/templates/contacto.html"><button class="contact">Contactanos</button></a>
+    </nav>
+    <main><!-- Contenido principal (cuerpo) de cada página -->
+        <div class="contact_form">
+            <div class="formulario">
+                <h1>Formulario de contacto</h1>
+                <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+                <form action="" method="post">
+                    <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+
+                    <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+
+                    <label for="image" class="colocar_imagen">Compartinos tu V8</label>
+                    <input type="file" id="imagen">
+                    
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <textarea class="texto_mensaje" id="mensaje" required="obligatorio"
+                        placeholder="Deja aquí tu comentario..." sentences rows="5"></textarea>
+
+                    <div class="enviar">
+                        <button type="submit" id="enviar">Enviar</button>
+                    </div>
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer><!-- Contenido del footer -->
+        <a href="https://www.instagram.com/">
+            <button><i class="fa-brands fa-instagram" id="instagram"></i></button>
+        </a>
+        <a href="https://www.facebook.com/">
+            <button><i class="fa-brands fa-facebook" id="facebook"></i></button>
+        </a>
+        <a href="https://www.x.com/">
+            <button><i class="fa-brands fa-x-twitter" id="x"></i></button>
+        </a>
+        <a href="https://www.youtube.com/">
+            <button><i class="fa-brands fa-youtube" id="youtube"></i></button>
+        </a>
+        <br><br>
+        Copyright © 2024 Muscle Rides by Emanuel Salvi <br>
+        All rights reserved
+    </footer>
+</body>
+
+</html>
