@@ -1,0 +1,38 @@
+{
+    "ford":[
+        {
+            "modelo":"Mustang",
+            "descripcion":"El Ford Mustang es un automóvil deportivo compacto lanzado por primera vez en 1964. Es conocido por su estilo icónico, su rendimiento robusto y su estatus como un emblema de los autos musculosos estadounidenses. Con varias generaciones, el Mustang ha ofrecido una gama de motores, desde eficientes V6 hasta potentes V8, y un diseño que ha evolucionado manteniendo su carácter distintivo.",
+            "img":"/assets/ford/Ford Mustang.jpg"
+        },
+        {
+            "modelo":"Torino",
+            "descripcion":"El Ford Torino fue producido entre 1968 y 1976 y se ofreció en varias configuraciones, incluyendo sedanes, coupés y station wagons. Originalmente diseñado como un automóvil intermedio, el Torino fue conocido por su participación en carreras de autos y su variante de alto rendimiento, el Torino Cobra.",
+            "img":"/assets/ford/Torino.avif"
+        }
+    ],
+    "chevrolet":[
+        {
+            "modelo":"Camaro",
+            "descripcion":"El Chevrolet Camaro es un automóvil deportivo que debutó en 1966 como competencia directa del Ford Mustang. Es reconocido por su estilo audaz, su alto rendimiento y su papel destacado en la cultura de autos musculosos. A lo largo de sus diversas generaciones, el Camaro ha ofrecido una combinación de potencia y manejo deportivo.",
+            "img":"/assets/chevrolet/Camaro.jpg"
+        },
+        {
+            "modelo":"Chevelle",
+            "descripcion":"El Chevrolet Chevelle fue un auto intermedio producido entre 1964 y 1977. Disponible en varias configuraciones de carrocería, incluido el sedán, coupé y convertible, el Chevelle se destaca por sus versiones de alto rendimiento, especialmente el SS (Super Sport), que ofrecía motores extremadamente potentes.",
+            "img":"/assets/chevrolet/Chevelle.jpg"
+        }
+    ],
+    "dodge":[
+        {
+            "modelo":"Challenger",
+            "descripcion":"El Dodge Challenger es un automóvil deportivo que debutó en 1970 y se convirtió en uno de los autos musculosos más emblemáticos de su época. Con un diseño retro-moderno, el Challenger ha mantenido su apariencia robusta y su rendimiento impresionante a través de sus generaciones.",
+            "img":"/assets/dodge/Challenger.avif"
+        },
+        {
+            "modelo":"Charger",
+            "descripcion":"El Dodge Charger, lanzado por primera vez en 1966, es un automóvil conocido por su diseño muscular y su potente desempeño. Originalmente concebido como un fastback de tamaño completo, el Charger ha evolucionado a lo largo de los años, manteniendo su imagen de alto rendimiento y estilo agresivo.",
+            "img":"/assets/dodge/Charger.webp"
+        }
+    ]
+}
