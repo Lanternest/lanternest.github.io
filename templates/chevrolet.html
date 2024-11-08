@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="/ajax.js"></script>
+    <script>GetProductos();</script>
 </head>
 <body>
     <header><!-- Contenido del header -->
@@ -22,26 +24,7 @@
         <a href="/utilities/contacto.html"><button class="contact">Contactanos</button></a>
     </nav>
     <main><!-- Contenido principal (cuerpo) de cada página -->
-        <div class="card-product-container">
-            <div class="card-product">
-                <div class="image-box">
-                    <img src="/assets/chevrolet/Camaro.jpg" alt="Chevrolet Camaro">
-                </div>
-                <div class="content">
-                    <h2>Camaro</h2>
-                    <p> El Chevrolet Camaro es un automóvil deportivo que debutó en 1966 como competencia directa del Ford Mustang. Es reconocido por su estilo audaz, su alto rendimiento y su papel destacado en la cultura de autos musculosos. A lo largo de sus diversas generaciones, el Camaro ha ofrecido una combinación de potencia y manejo deportivo.</p>
-                </div>
-            </div>
-            <div class="card-product">
-                <div class="image-box">
-                    <img src="/assets/chevrolet/Chevelle.jpg" alt="Chevrolet Chevelle">
-                </div>
-                <div class="content">
-                    <h2>Chevelle</h2>
-                    <p> El Chevrolet Chevelle fue un auto intermedio producido entre 1964 y 1977. Disponible en varias configuraciones de carrocería, incluido el sedán, coupé y convertible, el Chevelle se destaca por sus versiones de alto rendimiento, especialmente el SS (Super Sport), que ofrecía motores extremadamente potentes.</p>
-                </div>
-            </div>
-        </div>
+        <div id="card_product_container"></div>
     </main>
     <footer><!-- Contenido del footer -->
         <a href="https://www.instagram.com/">

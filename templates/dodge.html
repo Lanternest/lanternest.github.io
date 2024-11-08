@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="/ajax.js"></script>
+    <script>GetProductos();</script>
 </head>
 <body>
     <header><!-- Contenido del header -->
@@ -22,26 +24,7 @@
         <a href="/utilities/contacto.html"><button class="contact">Contactanos</button></a>
     </nav>
     <main><!-- Contenido principal (cuerpo) de cada página -->
-        <div class="card-product-container">
-            <div class="card-product">
-                <div class="image-box">
-                    <img src="/assets/dodge/Challenger.avif" alt="Dodge Challenger">
-                </div>
-                <div class="content">
-                    <h2>Challenger</h2>
-                    <p> El Dodge Challenger es un automóvil deportivo que debutó en 1970 y se convirtió en uno de los autos musculosos más emblemáticos de su época. Con un diseño retro-moderno, el Challenger ha mantenido su apariencia robusta y su rendimiento impresionante a través de sus generaciones.</p>
-                </div>
-            </div>
-            <div class="card-product">
-                <div class="image-box">
-                    <img src="/assets/dodge/Charger.webp" alt="Dodge Charger">
-                </div>
-                <div class="content">
-                    <h2>Charger</h2>
-                    <p> El Dodge Charger, lanzado por primera vez en 1966, es un automóvil conocido por su diseño muscular y su potente desempeño. Originalmente concebido como un fastback de tamaño completo, el Charger ha evolucionado a lo largo de los años, manteniendo su imagen de alto rendimiento y estilo agresivo.</p>
-                </div>
-            </div>
-        </div>
+        <div id="card_product_container"></div>
     </main>
     <footer><!-- Contenido del footer -->
         <a href="https://www.instagram.com/">

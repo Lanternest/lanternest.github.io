@@ -1,5 +1,6 @@
 {
-    "ford":[
+    "ford":
+    [
         {
             "modelo":"Mustang",
             "descripcion":"El Ford Mustang es un automóvil deportivo compacto lanzado por primera vez en 1964. Es conocido por su estilo icónico, su rendimiento robusto y su estatus como un emblema de los autos musculosos estadounidenses. Con varias generaciones, el Mustang ha ofrecido una gama de motores, desde eficientes V6 hasta potentes V8, y un diseño que ha evolucionado manteniendo su carácter distintivo.",
@@ -11,7 +12,8 @@
             "img":"/assets/ford/Torino.avif"
         }
     ],
-    "chevrolet":[
+    "chevrolet":
+    [
         {
             "modelo":"Camaro",
             "descripcion":"El Chevrolet Camaro es un automóvil deportivo que debutó en 1966 como competencia directa del Ford Mustang. Es reconocido por su estilo audaz, su alto rendimiento y su papel destacado en la cultura de autos musculosos. A lo largo de sus diversas generaciones, el Camaro ha ofrecido una combinación de potencia y manejo deportivo.",
@@ -23,7 +25,8 @@
             "img":"/assets/chevrolet/Chevelle.jpg"
         }
     ],
-    "dodge":[
+    "dodge":
+    [
         {
             "modelo":"Challenger",
             "descripcion":"El Dodge Challenger es un automóvil deportivo que debutó en 1970 y se convirtió en uno de los autos musculosos más emblemáticos de su época. Con un diseño retro-moderno, el Challenger ha mantenido su apariencia robusta y su rendimiento impresionante a través de sus generaciones.",

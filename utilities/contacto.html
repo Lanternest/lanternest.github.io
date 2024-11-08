@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="/ajax.js"></script>
 </head>
 
 <body>
@@ -32,12 +33,12 @@
                     <label for="nombre" class="colocar_nombre">Nombre
                         <span class="obligatorio">*</span>
                     </label>
-                    <input type="text" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    <input type="text" name="nombre" required placeholder="Escribe tu nombre">
 
                     <label for="email" class="colocar_email">Email
                         <span class="obligatorio">*</span>
                     </label>
-                    <input type="email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    <input type="email" name="email" required placeholder="Escribe tu Email">
 
                     <label for="image" class="colocar_imagen">Compartinos tu V8</label>
                     <input type="file" id="imagen">
@@ -45,7 +46,7 @@
                     <label for="mensaje" class="colocar_mensaje">Mensaje
                         <span class="obligatorio">*</span>
                     </label>
-                    <textarea class="texto_mensaje" id="mensaje" required="obligatorio"
+                    <textarea class="texto_mensaje" name="mensaje" required
                         placeholder="Deja aquí tu comentario..." sentences rows="5"></textarea>
 
                     <div class="enviar">
@@ -76,5 +77,4 @@
         All rights reserved
     </footer>
 </body>
-
 </html>
